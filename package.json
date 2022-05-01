@@ -1,0 +1,22 @@
+{
+  "name": "form-validation",
+  "version": "1.0.0",
+  "description": "how to validate forms? ",
+  "main": "main.js",
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelribeiroo/form-validations.git"
+  },
+  "keywords": [
+    "."
+  ],
+  "author": "Samuel Ribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelribeiroo/form-validations/issues"
+  },
+  "homepage": "https://github.com/samuelribeiroo/form-validations#readme"
+}

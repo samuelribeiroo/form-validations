@@ -1,0 +1,13 @@
+.input-section.success {
+    border-color: limegreen;
+}
+
+.input-section.error {
+    border-color: red;
+}
+
+.input-section .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}

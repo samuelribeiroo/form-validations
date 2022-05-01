@@ -37,7 +37,7 @@ function setSuccess(element) {
     inputControl.classList.add('success')
     inputControl.classList.remove('error')
 }
-    
+
 function isValidEmail(email) {
     const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -50,13 +50,13 @@ function validateInputs() {
     const getPasswordValue = getPassword.value.trim()
     const passwordAgainValue = passwordAgain.value.trim()
 
-    if(usernameValue === '') {
-      setError(userName, 'Username is required')
+    if (usernameValue === '') {
+        setError(userName, 'Username is required')
     } else {
         setSuccess(userName)
     }
 
-    if(emailValue === '') {
+    if (emailValue === '') {
         setError(getEmail, 'Email is required')
     } else if (!isValidEmail(emailValue)) {
         setError(getEmail, 'Please provide a valid email.')
@@ -64,7 +64,7 @@ function validateInputs() {
         setSuccess(getEmail)
     }
 
-    if(getPasswordValue === '') {
+    if (getPasswordValue === '') {
         setError(getPassword, 'Password is required')
     } else if (getPasswordValue.length < 8) {
         setError(getPassword, 'Password must be at least 8 characters')
@@ -72,11 +72,11 @@ function validateInputs() {
         setSuccess(getPassword)
     }
 
-    if(passwordAgainValue === '')  {
+    if (passwordAgainValue === '') {
         setError(passwordAgain, 'Password is required')
     } else if (passwordAgainValue !== getPasswordValue) {
         setError(passwordAgain, "Password does't match")
     } else {
         setSuccess(passwordAgain)
     }
- }
+}
